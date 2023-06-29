@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     padding: 25,
     marginTop: 20,
   },
-  
   arrowContainer: {
     position: 'absolute',
     top:25,
