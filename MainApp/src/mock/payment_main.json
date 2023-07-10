@@ -37,15 +37,15 @@
   "totalpayment": 12345,
   "monthlypayment": [
     {
-      "month": 12,
+      "month": "12월",
       "month_payment": 50000
     },
     {
-      "month": 1,
+      "month": "1월",
       "month_payment": 70000
     },
     {
-      "month": 12,
+      "month": "2월",
       "month_payment": 90000
     }
   ]
