@@ -1,12 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Home from './src/screens/Home';
 import Favorites from './src/screens/Favorites';
 import Payment from './src/screens/Payment';
 import Setting from './src/screens/Setting';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
+import AccumulationInformation from './src/screens/AccumulationInformation';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {NavigationContainer} from '@react-navigation/native';
 import Ionic from 'react-native-vector-icons/Ionicons';
 
 const App = () => {
@@ -30,7 +31,7 @@ const App = () => {
   const BottomTabScreen = () => {
     return (
       <Tab.Navigator
-        screenOptions={({ route }) => ({
+        screenOptions={({route}) => ({
           tabBarHideOnKeyboard: true,
           headerShown: false,
           tabBarShowLabel: false,
@@ -43,7 +44,7 @@ const App = () => {
             fontWeight: 'bold',
             marginTop: 5,
           },
-          tabBarIcon: ({ focused, size, color }) => {
+          tabBarIcon: ({focused, size, color}) => {
             let iconName;
             color = 'black';
             if (route.name === 'Home') {
@@ -57,14 +58,15 @@ const App = () => {
             }
 
             return (
-              <View style={{ width:50,alignItems: 'center' }}>
+              <View style={{width: 50, alignItems: 'center'}}>
                 <Ionic name={iconName} size={size} color={color} />
-                <Text style={{ fontSize: 12, fontWeight: 'bold', color }}>{getTabBarLabel(route, focused)}</Text>
+                <Text style={{fontSize: 12, fontWeight: 'bold', color}}>
+                  {getTabBarLabel(route, focused)}
+                </Text>
               </View>
             );
           },
-        })}
-      >
+        })}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Favorites" component={Favorites} />
         <Tab.Screen name="Payment" component={Payment} />
@@ -75,8 +77,12 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Bottom" component={BottomTabScreen} />
+        <Stack.Screen
+          name="AccumulationInformation"
+          component={AccumulationInformation}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

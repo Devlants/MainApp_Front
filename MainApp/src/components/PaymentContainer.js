@@ -7,13 +7,13 @@ import {
 } from 'react-native';
 import React from 'react';
 
-const PaymentContainer = ({title, children}) => {
+const PaymentContainer = ({title, goto, children}) => {
   const childCount = React.Children.count(children);
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>{title}</Text>
-        <TouchableOpacity style={styles.moreBtn}>
+        <TouchableOpacity style={styles.moreBtn} onPress={goto}>
           <Text style={styles.moreBtnTitle}>더보기</Text>
         </TouchableOpacity>
       </View>

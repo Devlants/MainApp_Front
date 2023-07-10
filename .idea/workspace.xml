@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b161739a-1e74-43e0-97c3-0eda8c2aa4b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MainApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp/src/components/MonthlyPayment.js" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/src/components/MonthlyPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp/src/mock/payment_main.json" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/src/mock/payment_main.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainApp/src/screens/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/src/screens/Payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

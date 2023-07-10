@@ -5,7 +5,10 @@ import payment_main from '../mock/payment_main.json';
 import PaymentContainer from '../components/PaymentContainer';
 import PaymentChildren from '../components/PaymentChildren';
 import MonthlyPayment from './../components/MonthlyPayment';
+import {useNavigation} from '@react-navigation/native';
 const Payment = () => {
+  const navigation = useNavigation();
+
   return (
     <ScrollView style={styles.body}>
       <Parentpage />
@@ -25,7 +28,9 @@ const Payment = () => {
         ))}
       </PaymentContainer>
 
-      <PaymentContainer title="적립 바코드">
+      <PaymentContainer
+        title="적립 바코드"
+        goto={() => navigation.push('AccumulationInformation')}>
         {payment_main.barcode.map((data, index) => (
           <PaymentChildren
             key={index}
@@ -40,7 +45,7 @@ const Payment = () => {
           totalpayment={payment_main.totalpayment}></PaymentChildren>
       </PaymentContainer>
       <PaymentContainer title="월별 결제 내역">
-        <MonthlyPayment/>
+        <MonthlyPayment monthlypayment={payment_main.monthlypayment} />
       </PaymentContainer>
     </ScrollView>
   );
